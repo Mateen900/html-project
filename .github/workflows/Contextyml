@@ -1,0 +1,8 @@
+name: context
+on: Push
+ jobs:
+  test:
+    runs-on: ubuntu-latest
+      step:
+        - name: github context
+          run: echo "${{toJSON(github}}"
